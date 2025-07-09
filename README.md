@@ -4,12 +4,12 @@ A powerful genomic data processing tool for extracting gene information from Gen
 
 ## 🌟 Features
 
-- **KEGG Batch Search**: Search and download multiple genomes from KEGG database
-- **Direct Accession Search**: Search by specific genome accession numbers (GCA/GCF)
-- **Sequence Mapping**: Advanced sequence comparison and clustering analysis
-- **AI-Enhanced Parsing**: Claude AI-powered intelligent GenBank parser generation
-- **Web Interface**: User-friendly Streamlit-based interface
-- **Batch Processing**: Three-stage workflow (Download → Preview → Parse)
+- **Unified Search Interface**: Single-page design with side-by-side organism and accession search
+- **AI-First Processing**: Claude AI parsing enabled by default for optimal results
+- **Integrated Workflow**: Seamless flow from search to analysis to sequence mapping
+- **Smart Defaults**: Minimal configuration needed - just search and process
+- **KEGG & NCBI Integration**: Comprehensive genome database access
+- **Advanced Sequence Analysis**: Clustering-based mapping with interactive visualizations
 
 ## 🚀 Quick Start
 
@@ -49,27 +49,26 @@ streamlit run main.py
 
 ## 📖 Usage
 
-### 1. KEGG Batch Search
+### Simplified Single-Page Interface
 
+**Left Column - Organism Search:**
 1. Enter organism name (e.g., "Clostridioides difficile")
-2. Set parameters (max genomes, include sequences)
-3. Stage 1: Download GenBank files
-4. Stage 2: Preview results
-5. Stage 3: Parse and generate CSV tables
+2. Set max genomes (1-20)
+3. Click "🔍 Search by Organism"
+4. Review results and click "🚀 Process All Genomes"
 
-### 2. Direct Accession Search
+**Right Column - Accession Search:**
+1. Enter genome accession (e.g., GCA_000005825.2)
+2. Click "🔍 Search by Accession"
+3. Select assembly and click "🚀 Process Selected Assembly"
 
-1. Enter genome accession number (e.g., GCA_000005825.2)
-2. Search and select assembly
-3. Download and extract genes
-4. Export results
+**Integrated Sequence Mapping:**
+- Appears automatically after processing
+- Multi-genome comparison for KEGG results
+- Upload additional files for single-genome comparison
+- Interactive visualizations and downloadable results
 
-### 3. Sequence Mapping
-
-1. Upload multiple CSV files with gene sequences
-2. Configure similarity threshold and clustering options
-3. Run mapping analysis
-4. View results with interactive visualizations
+For detailed usage instructions, see [SIMPLIFIED_USAGE.md](SIMPLIFIED_USAGE.md)
 
 ## 🏗️ System Architecture
 
